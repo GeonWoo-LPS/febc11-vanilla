@@ -1,0 +1,20 @@
+meta {
+  name: 게시물 추가
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://11.fesp.shop/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "test",
+    "title": "월요일 싫다.",
+    "content": "월요일 싫어",
+      "tag": "월요일, 싫음"
+  }
+}
